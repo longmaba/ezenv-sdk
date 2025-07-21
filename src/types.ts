@@ -5,7 +5,7 @@ export interface EzEnvConfig {
   apiKey: string
   /**
    * Base URL for the EzEnv API
-   * @default "https://api.ezenv.io"
+   * @default "https://ezenv.dev"
    */
   baseUrl?: string
 }

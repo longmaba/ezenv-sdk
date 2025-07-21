@@ -16,7 +16,7 @@ export class EzEnv {
     }
     
     this.apiKey = config.apiKey
-    this.baseUrl = config.baseUrl || 'http://localhost:3000' // Default to local for now
+    this.baseUrl = config.baseUrl || 'https://ezenv.dev'
   }
 
   /**
