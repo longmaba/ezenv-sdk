@@ -1,6 +1,6 @@
 {
   "name": "ezenv-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SDK for fetching environment variables from EzEnv",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
