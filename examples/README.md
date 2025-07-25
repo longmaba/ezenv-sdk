@@ -128,5 +128,5 @@ Always wrap SDK calls in try-catch blocks for proper error handling.
 ## Need Help?
 
 - Check the [SDK documentation](../README.md)
-- Visit the [EzEnv documentation](https://docs.ezenv.io)
+- Visit the [EzEnv documentation](https://ezenv.dev/docs)
 - Open an issue on [GitHub](https://github.com/ezenv/ezenv)
