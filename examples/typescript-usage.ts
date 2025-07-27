@@ -1,12 +1,12 @@
 /**
- * TypeScript usage examples for ezenv-sdk
+ * TypeScript usage examples for @ezenv/sdk
  *
  * This example demonstrates TypeScript-specific features and type safety
  * when using the EzEnv SDK.
  */
 
-import { EzEnv, createClient, EzEnvConfig, EzEnvOptions } from 'ezenv-sdk'
-import { EzEnvError, NetworkError, AuthError, NotFoundError, ValidationError } from 'ezenv-sdk'
+import { EzEnv, createClient, EzEnvConfig, EzEnvOptions } from '@ezenv/sdk'
+import { EzEnvError, NetworkError, AuthError, NotFoundError, ValidationError } from '@ezenv/sdk'
 
 // Define your environment variables interface
 interface MyAppSecrets {

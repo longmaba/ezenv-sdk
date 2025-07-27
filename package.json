@@ -1,5 +1,5 @@
 {
-  "name": "ezenv-sdk",
+  "name": "@ezenv/sdk",
   "version": "1.0.2",
   "description": "SDK for fetching environment variables from EzEnv",
   "main": "./dist/index.js",

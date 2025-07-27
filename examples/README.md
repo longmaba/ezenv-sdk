@@ -1,6 +1,6 @@
 # EzEnv SDK Examples
 
-This directory contains examples demonstrating how to use the ezenv-sdk package.
+This directory contains examples demonstrating how to use the @ezenv/sdk package.
 
 ## Examples
 
@@ -28,11 +28,11 @@ Demonstrates:
 
 1. **Install the SDK:**
    ```bash
-   npm install ezenv-sdk
+   npm install @ezenv/sdk
    # or
-   yarn add ezenv-sdk
+   yarn add @ezenv/sdk
    # or
-   pnpm add ezenv-sdk
+   pnpm add @ezenv/sdk
    ```
 
 2. **Get your API Key:**
@@ -70,7 +70,7 @@ export EZENV_BASE_URL="https://your-ezenv-instance.com"
 ### Initialize once, use everywhere
 ```javascript
 // config.js
-const { createClient } = require('ezenv-sdk');
+const { createClient } = require('@ezenv/sdk');
 
 const client = createClient(
   process.env.EZENV_API_KEY,
@@ -103,7 +103,7 @@ startApp().catch(console.error);
 require('dotenv').config();
 
 // Then override with EzEnv secrets
-const { createClient } = require('ezenv-sdk');
+const { createClient } = require('@ezenv/sdk');
 const client = createClient(process.env.EZENV_API_KEY);
 
 if (process.env.EZENV_API_KEY) {

@@ -1,11 +1,11 @@
 /**
- * Basic usage examples for ezenv-sdk
+ * Basic usage examples for @ezenv/sdk
  * 
  * This example demonstrates how to use the EzEnv SDK to fetch
  * environment variables from your EzEnv instance.
  */
 
-const { EzEnv, createClient } = require('ezenv-sdk');
+const { EzEnv, createClient } = require('@ezenv/sdk');
 
 // Example 1: Using the EzEnv class directly
 async function example1() {

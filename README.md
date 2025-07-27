@@ -5,17 +5,17 @@ Official Node.js SDK for fetching environment variables from EzEnv - the secure 
 ## Installation
 
 ```bash
-npm install ezenv-sdk
+npm install @ezenv/sdk
 # or
-yarn add ezenv-sdk
+yarn add @ezenv/sdk
 # or
-pnpm add ezenv-sdk
+pnpm add @ezenv/sdk
 ```
 
 ## Quick Start
 
 ```javascript
-import { EzEnv } from 'ezenv-sdk'
+import { EzEnv } from '@ezenv/sdk'
 
 // Initialize client with your API key
 const ezenv = new EzEnv({
@@ -44,7 +44,7 @@ export EZENV_API_KEY=ezenv_your_api_key_here
 Then use the `fromEnv` helper:
 
 ```javascript
-import { fromEnv } from 'ezenv-sdk'
+import { fromEnv } from '@ezenv/sdk'
 
 const ezenv = fromEnv()
 const secrets = await ezenv.get('my-project', 'production')
@@ -64,7 +64,7 @@ EZENV_ENVIRONMENT=development
 Then load it automatically:
 
 ```javascript
-import { loadFromFile } from 'ezenv-sdk'
+import { loadFromFile } from '@ezenv/sdk'
 
 // Loads secrets into process.env
 await loadFromFile()
@@ -137,7 +137,7 @@ Factory function to create a new EzEnv client.
 
 **Example:**
 ```javascript
-import { createClient } from 'ezenv-sdk'
+import { createClient } from '@ezenv/sdk'
 
 const ezenv = createClient('ezenv_your_api_key_here')
 ```
@@ -153,7 +153,7 @@ import {
   NetworkError, 
   NotFoundError,
   ValidationError 
-} from 'ezenv-sdk'
+} from '@ezenv/sdk'
 
 try {
   const secrets = await ezenv.get('project', 'env')
@@ -198,7 +198,7 @@ const cacheSize = ezenv.getCacheSize()
 The SDK is written in TypeScript and provides full type definitions:
 
 ```typescript
-import { EzEnv, EzEnvConfig, EzEnvOptions } from 'ezenv-sdk'
+import { EzEnv, EzEnvConfig, EzEnvOptions } from '@ezenv/sdk'
 
 const config: EzEnvConfig = {
   apiKey: 'ezenv_your_api_key_here'
@@ -227,7 +227,7 @@ const secrets: Record<string, string> = await ezenv.get('project', 'env', option
 ### Basic Usage
 
 ```javascript
-import { EzEnv } from 'ezenv-sdk'
+import { EzEnv } from '@ezenv/sdk'
 
 const ezenv = new EzEnv({
   apiKey: process.env.EZENV_API_KEY
@@ -245,7 +245,7 @@ const db = new Database(process.env.DATABASE_URL)
 
 ```javascript
 import express from 'express'
-import { loadFromFile } from 'ezenv-sdk'
+import { loadFromFile } from '@ezenv/sdk'
 
 async function startServer() {
   // Load environment variables
@@ -266,7 +266,7 @@ startServer().catch(console.error)
 
 ```javascript
 // next.config.js
-import { EzEnv } from 'ezenv-sdk'
+import { EzEnv } from '@ezenv/sdk'
 
 const ezenv = new EzEnv({
   apiKey: process.env.EZENV_API_KEY

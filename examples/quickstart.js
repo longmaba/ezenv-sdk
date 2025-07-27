@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
 /**
- * Quickstart example for ezenv-sdk
+ * Quickstart example for @ezenv/sdk
  * 
  * This is the simplest way to get started with EzEnv.
  * Run this file directly: node quickstart.js
  */
 
-const { createClient } = require('ezenv-sdk');
+const { createClient } = require('@ezenv/sdk');
 
 // Configuration - update these values
 const config = {
