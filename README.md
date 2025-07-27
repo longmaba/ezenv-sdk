@@ -286,5 +286,5 @@ MIT
 ## Support
 
 - [Documentation](https://ezenv.dev/docs)
-- [GitHub Issues](https://github.com/ezenv/sdk/issues)
+- [GitHub Issues](https://github.com/longmaba/ezenv-sdk/issues)
 - [Discord Community](https://discord.gg/ezenv)
